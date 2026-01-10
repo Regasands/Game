@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bpd7syu3kn3g4"]
+
+[ext_resource type="Script" uid="uid://c8r7v0t3qp20f" path="res://scripts/room/collection_scene.gd" id="1_vii4t"]
+[ext_resource type="PackedScene" uid="uid://c7qkmljrlo2om" path="res://scenes/interface_rooms/collections_scenen.tscn" id="2_l7a4j"]
+[ext_resource type="AudioStream" uid="uid://bkwu2wr6tpdvo" path="res://music/background/collection.mp3" id="3_f21m7"]
+[ext_resource type="PackedScene" uid="uid://djrwtis53w6rh" path="res://scenes/additional/scrol_cards.tscn" id="4_l7a4j"]
+
+[node name="collection_scene" type="Node2D"]
+position = Vector2(0, 1)
+script = ExtResource("1_vii4t")
+
+[node name="ClickerScene" parent="." instance=ExtResource("2_l7a4j")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_f21m7")
+volume_db = -10.0
+autoplay = true
+
+[node name="ScrolCards" parent="." instance=ExtResource("4_l7a4j")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1

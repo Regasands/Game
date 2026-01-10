@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://mipas70eukty"]
+
+[ext_resource type="PackedScene" uid="uid://ws0ftmhb4bl1" path="res://scenes/button/button.tscn" id="1_hfs24"]
+[ext_resource type="Texture2D" uid="uid://dgc2tlub45etm" path="res://assets_card_game_anime/UI/buttons/main/button_mini_game.jpg" id="2_ds0vp"]
+
+[node name="Button" instance=ExtResource("1_hfs24")]
+button_id = "mini_game"
+
+[node name="TextureRect" parent="." index="0"]
+texture = ExtResource("2_ds0vp")

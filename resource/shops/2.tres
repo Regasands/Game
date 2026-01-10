@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UpgradeTemplate" load_steps=2 format=3 uid="uid://cwksc25yusxv6"]
+
+[ext_resource type="Script" uid="uid://dv04r4no2s6bh" path="res://shop_boost.gd" id="1_1bhrw"]
+
+[resource]
+script = ExtResource("1_1bhrw")
+id = 2
+name = "shop_boost_energy_max"
+description = "shop_boost_energy_max_d"
+base_cost = 120.0
+exp_cost_rise = 1.7000000000000002
+boost_type = "boost_energy_max"
+base_value = 1.2000000000000002
+value_per_level = 0.5
+metadata/_custom_type_script = "uid://dv04r4no2s6bh"

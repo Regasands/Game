@@ -1,0 +1,8 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5xscormw2myc"]
+
+[ext_resource type="Resource" uid="uid://cafsxhcfdbujq" path="res://resource/cards/card_1.tres" id="1_kka4f"]
+[ext_resource type="Resource" uid="uid://dqwcu4h0yq1ww" path="res://resource/cards/card_2.tres" id="2_1r2ux"]
+[ext_resource type="Resource" uid="uid://bfiv8n2nfsqpb" path="res://resource/cards/card_3.tres" id="3_kp5uf"]
+
+[node name="ResourcePreloader" type="ResourcePreloader"]
+resources = [PackedStringArray("common_1", "common_2", "common_3"), [ExtResource("1_kka4f"), ExtResource("2_1r2ux"), ExtResource("3_kp5uf")]]

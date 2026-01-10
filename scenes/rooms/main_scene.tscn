@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://6iat6sqc0f5n"]
+
+[ext_resource type="Script" uid="uid://ebtp8ectdknp" path="res://scripts/main_scene_click.gd" id="1_7ykc4"]
+[ext_resource type="PackedScene" uid="uid://bmog6glsuuins" path="res://scenes/interface_rooms/clicker_scene.tscn" id="1_pw63i"]
+[ext_resource type="PackedScene" uid="uid://dhajq42i4unui" path="res://scenes/card.tscn" id="2_7ykc4"]
+[ext_resource type="AudioStream" uid="uid://vabjecod7qe3" path="res://music/background/Candy Click Quest.mp3" id="4_pu3yx"]
+
+[node name="MainSceneClick" type="Node2D"]
+script = ExtResource("1_7ykc4")
+
+[node name="ClickerScene" parent="." instance=ExtResource("1_pw63i")]
+
+[node name="Card" parent="." instance=ExtResource("2_7ykc4")]
+position = Vector2(0, 100)
+
+[node name="TimerEnergy" type="Timer" parent="."]
+autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_pu3yx")
+volume_db = -10.0
+pitch_scale = 0.8
+autoplay = true
+
+[connection signal="timeout" from="TimerEnergy" to="." method="_on_timer_energy_timeout"]

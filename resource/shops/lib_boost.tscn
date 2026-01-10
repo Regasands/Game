@@ -1,0 +1,13 @@
+[gd_scene load_steps=9 format=3 uid="uid://bdyfm7c0m8w6v"]
+
+[ext_resource type="Resource" uid="uid://dp6drqf4myi3a" path="res://resource/shops/0.tres" id="1_wyhmj"]
+[ext_resource type="Resource" uid="uid://uga1je45y5a4" path="res://resource/shops/1.tres" id="2_b8xgi"]
+[ext_resource type="Resource" uid="uid://cwksc25yusxv6" path="res://resource/shops/2.tres" id="3_iorrq"]
+[ext_resource type="Resource" uid="uid://bwmdthmfq68pq" path="res://resource/shops/3.tres" id="4_saoxv"]
+[ext_resource type="Resource" uid="uid://bvybxkcwrgq2n" path="res://resource/shops/4.tres" id="5_k1yjo"]
+[ext_resource type="Resource" uid="uid://tlj8p2mhdt0p" path="res://resource/shops/5.tres" id="6_saoxv"]
+[ext_resource type="Resource" uid="uid://vpk5gmmxy1x8" path="res://resource/shops/6.tres" id="7_k1yjo"]
+[ext_resource type="Resource" uid="uid://c4xesi5qyk52" path="res://resource/shops/7.tres" id="8_6kdqb"]
+
+[node name="ShopBoost" type="ResourcePreloader"]
+resources = [PackedStringArray("0", "1", "2", "3", "4", "5", "6", "7"), [ExtResource("1_wyhmj"), ExtResource("2_b8xgi"), ExtResource("3_iorrq"), ExtResource("4_saoxv"), ExtResource("5_k1yjo"), ExtResource("6_saoxv"), ExtResource("7_k1yjo"), ExtResource("8_6kdqb")]]

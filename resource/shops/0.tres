@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeTemplate" load_steps=2 format=3 uid="uid://dp6drqf4myi3a"]
+
+[ext_resource type="Script" uid="uid://dv04r4no2s6bh" path="res://shop_boost.gd" id="1_0el6s"]
+
+[resource]
+script = ExtResource("1_0el6s")
+id = 0
+name = "shop_boost_click"
+description = "shop_boost_click_d"
+base_cost = 120.0
+exp_cost_rise = 1.4000000000000001
+boost_type = "boost_click"
+value_per_level = 2.1
+metadata/_custom_type_script = "uid://dv04r4no2s6bh"

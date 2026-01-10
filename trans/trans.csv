@@ -1,0 +1,34 @@
+keys,en,ru,es
+ui_money,Money,Деньги,Dinero
+ui_energy,Energy,Энергия,Energía
+ui_crystals,Crystals,Кристаллы,Cristales
+ui_button_use,Use,Использовать,Usar
+ui_button_available,Available,Доступно,Disponible
+ui_button_apply,Apply,Применить,Aplicar
+ui_button_buy_for,Buy for:,Купить за:,Comprar por:
+char_name_stella_nova,Stella Nova,Стелла Нова,Stella Nova
+second_name_viktoria,Von Lux,Фон Люкс,Von Lux
+3_name,Tina Tap,Тина Тап, Tina Tap
+flavor_text_3,This girl was a master of clicker mechanics.,Эта девочка была мастером кликерной механики.,Esta chica era una maestra de la mecánica clicker.
+flavor_text_stella,"A common card, it was just lying around in the room. Why did you think of it now?","Обычная карточка, лежала где-то в комнате. Почему ты вспомнил о ней сейчас?","Una carta común, estaba tirada en la habitación. ¿Por qué pensaste en ella ahora?"
+flavor_text_viktoria,"A common card. Do you seriously think it was worth 500 gold?","Обычная карточка. Ты серьёзно думаешь, что она стоила 500 золотых?","Una carta común. ¿En serio crees que valía 500 de oro?"
+boost_text_1,No,Нету,NO
+boost_text_2,Click X1.2,клик X1.2,Clic X1.2
+boost_text_3,Click X2,клик X2,Clic X2
+
+shop_add_clicks,Add click,Добавочные клики,Clics adicionales
+shop_boost_click,Amplifier,Усилитель клика,Amplificador
+shop_boost_click_d,Deluxe,Элитный,De lujo
+shop_boost_shop,Multiplier,Множитель,Multiplicador
+shop_boost_shop_d,Deluxe,Элитный,De lujo
+shop_boost_energy_max,Capacity,Емкость,Capacidad
+shop_boost_energy_max_d,Deluxe,Элитный,De lujo
+shop_boost_energy_recovery,Recharge,Зарядка,Recarga
+shop_boost_energy_recovery_d,Deluxe,Элитный,De lujo
+shop_boost_discount,Discount,Скидка,Descuento
+shop_boost_discount_d,Deluxe,Элитный,De lujo
+shop_add_clicks_d,Additional clicks per second,Дополнительные клики в секунду,Clics adicionales por segundo
+shop_energy_recovery_d,Energy recovery per second,Восстановление энергии в секунду,Recuperación de energía por segundo
+shop_energy_recovery,Energy recovery,Восстановление энергии,Recuperación de energía
+shop_energy_max,Maximum energy capacity,Максимальный запас энергии,Capacidad máxima de energía
+shop_energy_max_d,Maximum energy ,Максимальный запас,Capacidad máxima

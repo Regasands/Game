@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="GameResources" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/game_resource.gd" id="1_0sywv"]
+
+[resource]
+script = ExtResource("1_0sywv")
+energy = 130
+clicks = 6
+money = 381
+dict = null
+system_upgrade_shop = {
+0: 0,
+1: 0,
+2: 0,
+3: 0,
+4: 0,
+5: 1,
+6: 0,
+7: 0,
+8: 0,
+9: 0
+}

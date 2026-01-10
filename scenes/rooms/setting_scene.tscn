@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://51t1426mvnsj"]
+
+[ext_resource type="Script" uid="uid://wfpthoqxx588" path="res://scripts/room/setting_scene.gd" id="1_ev4wf"]
+[ext_resource type="PackedScene" uid="uid://b24ns6wcs3wyb" path="res://scenes/interface_rooms/setting_scene.tscn" id="2_ctipv"]
+[ext_resource type="FontFile" uid="uid://cs4nv7nl8f00l" path="res://font/Kenney Mini.ttf" id="3_bpf4a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ev4wf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ctipv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpf4a"]
+
+[node name="setting_scene" type="Node2D"]
+script = ExtResource("1_ev4wf")
+
+[node name="ClickerScene" parent="." instance=ExtResource("2_ctipv")]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 27.0
+offset_top = 153.0
+offset_right = 359.0
+offset_bottom = 585.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(0, 50)
+offset_left = 84.0
+offset_top = 186.0
+offset_right = 325.0
+offset_bottom = 313.0
+theme_override_constants/separation = 20
+
+[node name="ru" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_bpf4a")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ev4wf")
+text = "Русский"
+
+[node name="en" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_bpf4a")
+theme_override_styles/normal = SubResource("StyleBoxFlat_ctipv")
+text = "English"
+
+[node name="es" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_bpf4a")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bpf4a")
+text = "Espanol"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 80.0
+offset_top = 325.0
+offset_right = 322.0
+offset_bottom = 561.0
+theme_override_fonts/font = ExtResource("3_bpf4a")
+
+[connection signal="pressed" from="VBoxContainer/ru" to="." method="_on_ru_pressed"]
+[connection signal="pressed" from="VBoxContainer/en" to="." method="_on_en_pressed"]
+[connection signal="pressed" from="VBoxContainer/es" to="." method="_on_es_pressed"]

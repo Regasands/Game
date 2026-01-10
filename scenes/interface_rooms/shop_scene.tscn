@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckmy7ptyckmo5"]
+
+[ext_resource type="PackedScene" uid="uid://c1hgx12psnoqt" path="res://scenes/interface_rooms/ui_scene_base.tscn" id="1_65s7d"]
+[ext_resource type="Texture2D" uid="uid://cxmfrn7nms3uk" path="res://assets_card_game_anime/background/shop.jpg" id="2_pkdvm"]
+[ext_resource type="PackedScene" uid="uid://dn5comdvgbw" path="res://scenes/button/shop/button_shop_boost.tscn" id="3_pqaue"]
+[ext_resource type="PackedScene" uid="uid://cimnp04cu2ipj" path="res://scenes/button/shop/button_shop_keys.tscn" id="3_ux078"]
+
+[node name="ClickerScene" instance=ExtResource("1_65s7d")]
+
+[node name="TextureRect" parent="." index="0"]
+texture = ExtResource("2_pkdvm")
+
+[node name="button_shop_keys" parent="HBoxContainer" index="0" instance=ExtResource("3_ux078")]
+layout_mode = 2
+
+[node name="button_shop_boost" parent="HBoxContainer" index="2" instance=ExtResource("3_pqaue")]
+layout_mode = 2
+button_id = "button_shop_boost"

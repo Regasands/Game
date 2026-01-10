@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn5comdvgbw"]
+
+[ext_resource type="PackedScene" uid="uid://ws0ftmhb4bl1" path="res://scenes/button/button.tscn" id="1_4rn3g"]
+[ext_resource type="Texture2D" uid="uid://qyksbh8lwjrk" path="res://assets_card_game_anime/UI/buttons/shop/button_shop.png" id="2_mw65o"]
+
+[node name="Button" instance=ExtResource("1_4rn3g")]
+button_id = "button_bust_shop"
+
+[node name="TextureRect" parent="." index="0"]
+texture = ExtResource("2_mw65o")

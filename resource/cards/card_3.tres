@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ResourceCard" load_steps=3 format=3 uid="uid://bfiv8n2nfsqpb"]
+
+[ext_resource type="Texture2D" uid="uid://drmnpbplicsau" path="res://assets_card_game_anime/cards/common_card_3.jpg" id="1_i1euo"]
+[ext_resource type="Script" uid="uid://dje3deo6scmgj" path="res://scripts/card/card_resource.gd" id="1_s1ttu"]
+
+[resource]
+script = ExtResource("1_s1ttu")
+name = "3_name"
+cost = 1000
+description = "flavor_text_3"
+description_boost = "boost_text_3"
+card_texture = ExtResource("1_i1euo")
+boost_click = 2.0
+metadata/_custom_type_script = "uid://dje3deo6scmgj"

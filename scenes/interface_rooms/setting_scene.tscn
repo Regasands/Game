@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b24ns6wcs3wyb"]
+
+[ext_resource type="PackedScene" uid="uid://bmog6glsuuins" path="res://scenes/interface_rooms/clicker_scene.tscn" id="1_xha2w"]
+[ext_resource type="Texture2D" uid="uid://7i553gjuw2mx" path="res://assets_card_game_anime/background/setting.jpg" id="2_ed1le"]
+
+[node name="ClickerScene" instance=ExtResource("1_xha2w")]
+
+[node name="TextureRect" parent="." index="0"]
+texture = ExtResource("2_ed1le")

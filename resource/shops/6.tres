@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="UpgradeTemplate" load_steps=2 format=3 uid="uid://vpk5gmmxy1x8"]
+
+[ext_resource type="Script" uid="uid://dv04r4no2s6bh" path="res://shop_boost.gd" id="1_m15lj"]
+
+[resource]
+script = ExtResource("1_m15lj")
+id = 7
+name = "shop_energy_recovery"
+description = "shop_energy_recovery_d"
+base_cost = 200.0
+exp_cost_rise = 1.4
+type = "additional_res"
+base_value = 2.0
+value_per_level = 1.7
+metadata/_custom_type_script = "uid://dv04r4no2s6bh"

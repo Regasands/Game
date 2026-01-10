@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cad4utbmhnj76"]
+
+[ext_resource type="PackedScene" uid="uid://ws0ftmhb4bl1" path="res://scenes/button/button.tscn" id="1_3vosl"]
+[ext_resource type="Texture2D" uid="uid://qyksbh8lwjrk" path="res://assets_card_game_anime/UI/buttons/shop/button_shop.png" id="2_gk1bt"]
+
+[node name="Button" instance=ExtResource("1_3vosl")]
+
+[node name="Button" parent="." index="3"]
+icon = ExtResource("2_gk1bt")
