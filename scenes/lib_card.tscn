@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5xscormw2myc"]
+[gd_scene load_steps=9 format=3 uid="uid://c5xscormw2myc"]
 
 [ext_resource type="Resource" uid="uid://cafsxhcfdbujq" path="res://resource/cards/card_1.tres" id="1_kka4f"]
 [ext_resource type="Resource" uid="uid://dqwcu4h0yq1ww" path="res://resource/cards/card_2.tres" id="2_1r2ux"]
 [ext_resource type="Resource" uid="uid://bfiv8n2nfsqpb" path="res://resource/cards/card_3.tres" id="3_kp5uf"]
+[ext_resource type="Resource" uid="uid://dhxxnticfyjr0" path="res://resource/cards/card_4.tres" id="4_o7nwk"]
+[ext_resource type="Resource" uid="uid://clm2kvh56gquf" path="res://resource/cards/card_5.tres" id="5_h4jrl"]
+[ext_resource type="Resource" uid="uid://eqytmfdy8l7s" path="res://resource/cards/card_6.tres" id="6_73o4w"]
+[ext_resource type="Resource" uid="uid://dykapawp56y5b" path="res://resource/cards/card_7.tres" id="7_66jkw"]
+[ext_resource type="Resource" uid="uid://drld0vgpqjv5i" path="res://resource/cards/card_8.tres" id="8_wr6s2"]
 
 [node name="ResourcePreloader" type="ResourcePreloader"]
-resources = [PackedStringArray("common_1", "common_2", "common_3"), [ExtResource("1_kka4f"), ExtResource("2_1r2ux"), ExtResource("3_kp5uf")]]
+resources = [PackedStringArray("common_1", "common_2", "common_3", "epic_1", "epic_2", "epic_3", "epic_4", "legend_1"), [ExtResource("1_kka4f"), ExtResource("2_1r2ux"), ExtResource("3_kp5uf"), ExtResource("4_o7nwk"), ExtResource("5_h4jrl"), ExtResource("6_73o4w"), ExtResource("7_66jkw"), ExtResource("8_wr6s2")]]

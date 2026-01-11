@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ResourceCard" load_steps=3 format=3 uid="uid://dykapawp56y5b"]
+
+[ext_resource type="Script" uid="uid://dje3deo6scmgj" path="res://scripts/card/card_resource.gd" id="1_oia1y"]
+[ext_resource type="Texture2D" uid="uid://dpd2ws3riocct" path="res://assets_card_game_anime/cards/epic_card_4.jpeg" id="1_r7vf2"]
+
+[resource]
+script = ExtResource("1_oia1y")
+name = "epic_card_4_name"
+rarity = "epic"
+cost = 6000
+description = "epic_card_4_flavor"
+description_boost = "epic_card_4_boost"
+card_texture = ExtResource("1_r7vf2")
+boost_shop = 3.0
+boost_click = 3.0
+metadata/_custom_type_script = "uid://dje3deo6scmgj"

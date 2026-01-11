@@ -1,6 +1,21 @@
 class_name GameResources
 extends Resource
 
+@export_category("chance")
+@export var chance_dict = {
+	"common": 0.7,
+	"epic": 0.2,
+	"legend": 0.1,
+}
+@export var cristal_by_box: int =15
+
+@export_category("TotalValue")
+@export var total_click: int = 0
+@export var total_earn_money: int = 0
+
+@export_category("PassiveIncome")
+@export var passive_income_recovery = 0
+
 @export_category("EnergyResource")
 @export var energy: int = 100
 @export var max_energy: int = 200
@@ -20,6 +35,11 @@ extends Resource
 	"common_1": true,
 	"common_2": false,
 	"common_3": false,
+	"epic_1": false,
+	"epic_2": false,
+	"epic_3": false,
+	"epic_4": false,
+	"legend_1": false,
 }
 
 @export var open_backgrounds: Dictionary = { 
@@ -35,6 +55,7 @@ extends Resource
 @export var mini_game: float = 1.0
 @export var critical_chance: float = 1.0
 @export var luck: float = 1.0
+
 
 @export_category("ConnectIdToItems")
 @export var dict =  {

@@ -1,0 +1,32 @@
+keys,en,ru,es 
+char_name_stella_nova,Stella Nova,Стелла Нова,Stella Nova
+flavor_text_stella,"A common card, it was just lying around in the room. Why did you think of it now?","Обычная карточка, лежала где-то в комнате. Почему ты вспомнил о ней сейчас?","Una carta común, estaba tirada en la habitación. ¿Por qué pensaste en ella ahora?"
+boost_text_1,No,Нету,NO
+
+second_name_viktoria,Von Lux,Фон Люкс,Von Lux
+flavor_text_viktoria,"A common card. Do you seriously think it was worth 500 gold?","Обычная карточка. Ты серьёзно думаешь, что она стоила 500 золотых?","Una carta común. ¿En serio crees que valía 500 de oro?"
+boost_text_2,Click X1.2,клик X1.2,Clic X1.2
+
+3_name,Tina Tap,Тина Тап, Tina Tap
+flavor_text_3,This girl was a master of clicker mechanics.,Эта девочка была мастером кликерной механики.,Esta chica era una maestra de la mecánica clicker.
+boost_text_3,Click X2,клик X2,Clic X2
+
+epic_card_1_name,Becky,Бекки,Becky
+epic_card_1_flavor,"Remember the shop assistant from your childhood? This card looks a lot like her.","Помнишь продавщицу из магазина в детстве? Карточка очень похожа на нее.","¿Recuerdas a la vendedora de la tienda de tu infancia? Esta carta se le parece mucho."
+epic_card_1_boost,"Click 2x, Energy Recovery 2x, Luck 1.5x","Клик 2x, Восстановление энергии 2x, Удача 1.5x","Clic 2x, Recuperación de Energía 2x, Suerte 1.5x"
+
+epic_card_2_name,Biba and Boba,Биба и Боба,Biba y Boba
+epic_card_2_flavor,"We always laughed at her, and now she's your card...","Всегда смеялись над ней, а теперь это твоя карточка...","Siempre nos reíamos de ella, y ahora es tu carta..."
+epic_card_2_boost,"Minigame Income 3x","Доход в мини-играх 3x","Ingresos de Minijuegos 3x"
+
+epic_card_3_name,Festival Ambassador,Амбассадор Праздника,Embajadora de la Fiesta
+epic_card_3_flavor,"It was evening, a holiday, New Year's... and then what? You, the card, and the void.","Был вечер, праздник, Новый Год... а дальше что? Ты, карта и пространство.","Era de noche, un día festivo, Año Nuevo... ¿y luego qué? Tú, la carta y la nada."
+epic_card_3_boost,"Passive Income 3x, Click 3x","Пассивный доход 3x, Клик 3x","Ingresos Pasivos 3x, Clic 3x"
+
+epic_card_4_name,a passerby,Прохожая,transeúnte
+epic_card_4_flavor,"Sometimes strangers remain in memory","Иногда случайные люди остаются в памяти","A veces los desconocidos permanecen en la memoria"
+epic_card_4_boost,"Passive Income 3x, Click 3x","Пассивный доход 3x, Клик 3x","Ingresos Pasivos 3x, Clic 3x"
+
+legend_card_1_name,Fire and Ash,Огонь и Пепел,Fuego y Ceniza
+legend_card_1_flavor,"You woke up, looked around, saw her... and fell asleep again.","Ты очнулся, посмотрел, огляделся, увидел ее... опять уснул.","Te despertaste, miraste a tu alrededor, la viste... y te dormiste de nuevo."
+legend_card_1_boost,"Click 10x","Клик 10x","Clic 10x"

@@ -28,7 +28,7 @@ window/stretch/mode="canvas_items"
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://trans/trans.en.translation", "res://trans/trans.es.translation", "res://trans/trans.ru.translation")
+locale/translations=PackedStringArray("res://trans/trans.en.translation", "res://trans/trans.es.translation", "res://trans/trans.ru.translation", "res://trans/girl_cards.en.translation", "res://trans/girl_cards.es .translation", "res://trans/girl_cards.ru.translation")
 
 [rendering]
 

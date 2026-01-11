@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ResourceCard" load_steps=3 format=3 uid="uid://drld0vgpqjv5i"]
+
+[ext_resource type="Texture2D" uid="uid://bl0yyujo6o2ox" path="res://assets_card_game_anime/cards/legend_card_1.jpg" id="1_qslml"]
+[ext_resource type="Script" uid="uid://dje3deo6scmgj" path="res://scripts/card/card_resource.gd" id="1_tgvj2"]
+
+[resource]
+script = ExtResource("1_tgvj2")
+name = "legend_card_1_name"
+rarity = "legend"
+cost = 10000
+description = "legend_card_1_flavor"
+description_boost = "legend_card_1_boost"
+card_texture = ExtResource("1_qslml")
+boost_shop = 10.0
+metadata/_custom_type_script = "uid://dje3deo6scmgj"

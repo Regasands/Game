@@ -7,7 +7,7 @@ extends Node2D
 @onready var es_button: Button = $VBoxContainer/es
 
 var list_button = null
-var lang_button = {"ru_RU": 0, "en_EN": 1, "es_ES": 2}
+var lang_button = {"ru_RU": 0, "en_EN": 1, "es_ES": 2, "en": 1, "ru": 0, "es": 2}
 var color = Color("#6bc46b")
 var color_basic = Color("#8b8b8b")
 
@@ -18,6 +18,7 @@ func _ready() -> void:
 	SceneManager._register_button()
 	var current_lang = TranslationServer.get_locale()
 	update_(lang_button[current_lang])
+	create_boost_statistc()
 	
 	
 func _on_ru_pressed() -> void:
@@ -42,8 +43,42 @@ func _change_button_color(index):
 	
 func update_(index_button: int):
 	GameState.update_all_ui()
+	create_boost_statistc()
 	_change_button_color(index_button)
 	
-#func create_boost_statistc():
-	#for i in range(GameState.global_boost):
-		#$TextEdit
+func create_boost_statistc():
+	var global_boost_money = GameState.get_total_click()
+	var global_boost_energy_recovery = GameState.get_total_recovery_energy()
+	var global_boost_luck = GameState.get_total_boost_luck()
+	var global_boost_discount = GameState.get_total_boost_discount()
+	var global_total_clicks = GameState.resources.total_click
+	var global_total_money_earn = GameState.resources.total_earn_money
+	var global_total_shop_per_sec = GameState.get_total_shop_income()
+
+	var formatted_clicks = _format_number(global_total_clicks)
+	var formatted_money = _format_money(global_total_money_earn)
+	var formatted_income = _format_money(global_total_shop_per_sec) + "/s"
+
+	var text = ""
+	text += tr("stat_total_clicks") + ": " + formatted_clicks + "\n"
+	text += tr("stat_money_earned") + ": " + formatted_money + "\n"
+	text += tr("stat_passive_income") + ": " + formatted_income + "\n\n"
+
+	text += tr("stat_click_boost") + ": x" + str(global_boost_money) + "\n"
+	text += tr("stat_energy_recovery") + ": +" + str(global_boost_energy_recovery) + "/s\n"
+	text += tr("stat_luck_boost") + ": x" + str(global_boost_luck) + "\n"
+	text += tr("stat_discount_boost") + ": x" + str(global_boost_discount)
+	
+	$TextEdit.text = text
+	$TextEdit.scroll_vertical = 0 
+
+func _format_number(num: float) -> String:
+	if num >= 1000000:
+		return "%.1fM" % (num / 1000000.0)
+	elif num >= 1000:
+		return "%.1fK" % (num / 1000.0)
+	else:
+		return str(int(num))
+
+func _format_money(amount: float) -> String:
+	return _format_number(amount)

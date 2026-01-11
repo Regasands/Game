@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://51t1426mvnsj"]
 
 [ext_resource type="Script" uid="uid://wfpthoqxx588" path="res://scripts/room/setting_scene.gd" id="1_ev4wf"]
-[ext_resource type="PackedScene" uid="uid://b24ns6wcs3wyb" path="res://scenes/interface_rooms/setting_scene.tscn" id="2_ctipv"]
+[ext_resource type="PackedScene" uid="uid://1emnp3uhpgwn" path="res://scenes/interface_rooms/setting_scene_.tscn" id="2_ev4wf"]
 [ext_resource type="FontFile" uid="uid://cs4nv7nl8f00l" path="res://font/Kenney Mini.ttf" id="3_bpf4a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ev4wf"]
@@ -13,7 +13,7 @@
 [node name="setting_scene" type="Node2D"]
 script = ExtResource("1_ev4wf")
 
-[node name="ClickerScene" parent="." instance=ExtResource("2_ctipv")]
+[node name="ClickerScene" parent="." instance=ExtResource("2_ev4wf")]
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

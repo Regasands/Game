@@ -76,18 +76,18 @@ offset_bottom = 686.0
 theme_override_constants/separation = 70
 alignment = 1
 
-[node name="Button5" parent="HBoxContainer" instance=ExtResource("5_riamo")]
-layout_mode = 2
-button_id = "collection"
-
-[node name="Button" parent="HBoxContainer" instance=ExtResource("5_4510x")]
-layout_mode = 2
-
 [node name="Button2" parent="HBoxContainer" instance=ExtResource("6_2g327")]
+layout_mode = 2
+
+[node name="Button4" parent="HBoxContainer" instance=ExtResource("8_isu83")]
 layout_mode = 2
 
 [node name="Button3" parent="HBoxContainer" instance=ExtResource("7_3ai74")]
 layout_mode = 2
 
-[node name="Button4" parent="HBoxContainer" instance=ExtResource("8_isu83")]
+[node name="Button5" parent="HBoxContainer" instance=ExtResource("5_riamo")]
+layout_mode = 2
+button_id = "collection"
+
+[node name="Button" parent="HBoxContainer" instance=ExtResource("5_4510x")]
 layout_mode = 2

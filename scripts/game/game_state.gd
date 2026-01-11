@@ -57,6 +57,7 @@ func update_all_ui():
 func add_money(amount: int):
 	if amount == 0:
 		return		
+	resources.total_earn_money += amount
 	resources.money += amount
 	save_resources()
 	
@@ -134,6 +135,7 @@ func check_availability(name_: String) -> bool:
 	return resources.open_cards.get(name_, false)
 	
 func update_open_cards(name_: String):
+	print(name_)
 	if !resources.open_cards.get(name_, true):
 		resources.open_cards[name_] = true
 	else:
@@ -151,7 +153,15 @@ func buy_card(name_) -> bool:
 		return false
 		
 		
-# покупаем и обновляем карту
+func get_all_close_card_anime():
+	var list_cards = []
+	for key in resources.open_cards.keys():
+		if !resources.open_cards[key]:
+			list_cards.append(key)
+	return list_cards
+	
+
+# покупаем и обновляем карту улучшенй !НЕ КАРТУ АНИМЕ
 func update_card(card_upgrade):
 	if spend_money(card_upgrade.res.calculate_cost(card_upgrade.current_lvl) / get_total_boost_discount()):
 		resources.system_upgrade_shop[card_upgrade.card_id] += 1
@@ -183,8 +193,7 @@ func update_res(card_upgrade):
 # получаем полные бусты
 func get_total_click() -> float:
 	return resources.clicks * resources.boost_click * resource_card.boost_click
-	
-	
+		
 func get_total_recovery_energy() -> float:
 	return resources.recovery_energy * resources.boost_recorvy_energy * resource_card.recovery_energy
 
@@ -196,7 +205,9 @@ func get_total_boost_discount() -> float:
 
 func get_total_max_energy() -> float:
 	return resources.max_energy * resources.boost_energy_max * resource_card.boost_energy_max
-		
+
+func get_total_shop_income() -> float:
+	return resources.boost_shop * resources.passive_income_recovery * resource_card.boost_shop
 	
 func set_money(value: int):
 	if resources.money != value:

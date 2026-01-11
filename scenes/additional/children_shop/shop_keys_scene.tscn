@@ -1,15 +1,97 @@
-[gd_scene format=3 uid="uid://t5mt8fyeqpxw"]
+[gd_scene load_steps=12 format=3 uid="uid://t5mt8fyeqpxw"]
+
+[ext_resource type="Script" uid="uid://bjp6obolm3y1" path="res://scenes/additional/children_shop/shop_keys_scene.gd" id="1_afh2o"]
+[ext_resource type="Texture2D" uid="uid://bpkjct4gqt075" path="res://assets_card_game_anime/items/animation_book_2.png" id="1_s7squ"]
+[ext_resource type="FontFile" uid="uid://cs4nv7nl8f00l" path="res://font/Kenney Mini.ttf" id="2_u0esi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vq82p"]
+bg_color = Color(0.4117647, 0.6431373, 0.7019608, 0.6627451)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afh2o"]
+atlas = ExtResource("1_s7squ")
+region = Rect2(0, 0, 170, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0esi"]
+atlas = ExtResource("1_s7squ")
+region = Rect2(170, 0, 170, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vq82p"]
+atlas = ExtResource("1_s7squ")
+region = Rect2(340, 0, 170, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bqstp"]
+atlas = ExtResource("1_s7squ")
+region = Rect2(0, 170, 170, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ww1k7"]
+atlas = ExtResource("1_s7squ")
+region = Rect2(170, 170, 170, 170)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_syfog"]
+atlas = ExtResource("1_s7squ")
+region = Rect2(340, 170, 170, 170)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_emu3e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afh2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0esi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vq82p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bqstp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ww1k7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_syfog")
+}],
+"loop": false,
+"name": &"default",
+"speed": 3.0
+}]
 
 [node name="shop_keys" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 7.0
+offset_top = -5.0
+offset_right = 1.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_afh2o")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 217.0
-offset_bottom = 197.0
-color = Color(0, 1, 1, 1)
+[node name="BuyCard" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1684492
+anchor_top = 0.7078825
+anchor_right = 0.85294116
+anchor_bottom = 0.75734156
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 16)
+theme_override_fonts/font = ExtResource("2_u0esi")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_vq82p")
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedCard" type="AnimatedSprite2D" parent="."]
+position = Vector2(185, 353)
+sprite_frames = SubResource("SpriteFrames_emu3e")
+frame_progress = 0.5627737
+
+[node name="SpawnPoint" type="Marker2D" parent="AnimatedCard"]
+position = Vector2(-1, -160)
+
+[connection signal="pressed" from="BuyCard" to="." method="_on_buy_card_pressed"]
+[connection signal="animation_finished" from="AnimatedCard" to="." method="_on_animated_card_animation_finished"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://pilsyf1wkmr"]
+
+[ext_resource type="Script" uid="uid://cafcovky03hrn" path="res://scripts/mini_game/mini_game_2048.gd" id="1_h8atv"]
+[ext_resource type="Script" uid="uid://gui54ly2f1e7" path="res://scripts/mini_game/game_logic.gd" id="2_metrp"]
+
+[node name="MiniGame2048" type="Node2D"]
+script = ExtResource("1_h8atv")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_top = 97.0
+offset_right = 383.0
+offset_bottom = 582.0
+size_flags_horizontal = 0
+columns = 4
+
+[node name="GameLogic" type="Node" parent="."]
+script = ExtResource("2_metrp")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0

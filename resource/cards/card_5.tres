@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ResourceCard" load_steps=3 format=3 uid="uid://clm2kvh56gquf"]
+
+[ext_resource type="Script" uid="uid://dje3deo6scmgj" path="res://scripts/card/card_resource.gd" id="1_1k617"]
+[ext_resource type="Texture2D" uid="uid://d1iy0nbt2v4uc" path="res://assets_card_game_anime/cards/epic_card_2.png" id="1_usrcv"]
+
+[resource]
+script = ExtResource("1_1k617")
+name = "epic_card_2_name"
+rarity = "epic"
+cost = 3000
+description = "epic_card_2_flavor"
+description_boost = "epic_card_2_boost"
+card_texture = ExtResource("1_usrcv")
+mini_game = 3.0
+metadata/_custom_type_script = "uid://dje3deo6scmgj"

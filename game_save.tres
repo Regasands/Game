@@ -4,13 +4,15 @@
 
 [resource]
 script = ExtResource("1_0sywv")
-energy = 130
-clicks = 6
-money = 381
+total_click = 169
+total_earn_money = 602
+energy = 22
+money = 439
+boost_click = 5.0
 dict = null
 system_upgrade_shop = {
-0: 0,
-1: 0,
+0: 2,
+1: 1,
 2: 0,
 3: 0,
 4: 0,

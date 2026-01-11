@@ -6,12 +6,7 @@ ui_button_use,Use,Использовать,Usar
 ui_button_available,Available,Доступно,Disponible
 ui_button_apply,Apply,Применить,Aplicar
 ui_button_buy_for,Buy for:,Купить за:,Comprar por:
-char_name_stella_nova,Stella Nova,Стелла Нова,Stella Nova
-second_name_viktoria,Von Lux,Фон Люкс,Von Lux
-3_name,Tina Tap,Тина Тап, Tina Tap
-flavor_text_3,This girl was a master of clicker mechanics.,Эта девочка была мастером кликерной механики.,Esta chica era una maestra de la mecánica clicker.
-flavor_text_stella,"A common card, it was just lying around in the room. Why did you think of it now?","Обычная карточка, лежала где-то в комнате. Почему ты вспомнил о ней сейчас?","Una carta común, estaba tirada en la habitación. ¿Por qué pensaste en ella ahora?"
-flavor_text_viktoria,"A common card. Do you seriously think it was worth 500 gold?","Обычная карточка. Ты серьёзно думаешь, что она стоила 500 золотых?","Una carta común. ¿En serio crees que valía 500 de oro?"
+ui_button_buy_key_for,Buy for 15 Crystals,Купить за 15 кристаллов ,Comprar por 15 сristales
 boost_text_1,No,Нету,NO
 boost_text_2,Click X1.2,клик X1.2,Clic X1.2
 boost_text_3,Click X2,клик X2,Clic X2
@@ -32,3 +27,11 @@ shop_energy_recovery_d,Energy recovery per second,Восстановление �
 shop_energy_recovery,Energy recovery,Восстановление энергии,Recuperación de energía
 shop_energy_max,Maximum energy capacity,Максимальный запас энергии,Capacidad máxima de energía
 shop_energy_max_d,Maximum energy ,Максимальный запас,Capacidad máxima
+
+stat_total_clicks,Total Clicks,Всего кликов,Clics totales
+stat_money_earned,Money Earned,Всего заработано,Dinero ganado
+stat_passive_income,Passive Income per Second,Пассивный доход в секунду,Ingresos pasivos por segundo
+stat_click_boost,Click Multiplier,Множитель клика,Multiplicador de clic
+stat_energy_recovery,Energy Recovery,Восстановление энергии,Recuperación de energía
+stat_luck_boost,Luck Multiplier,Множитель удачи,Multiplicador de suerte
+stat_discount_boost,Discount Multiplier,Множитель скидки,Multiplicador de descuento
