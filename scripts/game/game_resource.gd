@@ -7,7 +7,7 @@ extends Resource
 	"epic": 0.2,
 	"legend": 0.1,
 }
-@export var cristal_by_box: int =15
+@export var cristal_by_box: int = 20
 
 @export_category("TotalValue")
 @export var total_click: int = 0

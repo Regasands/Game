@@ -1,11 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://1emnp3uhpgwn"]
+[gd_scene load_steps=9 format=3 uid="uid://1emnp3uhpgwn"]
 
-[ext_resource type="Script" uid="uid://b56p1b1nbxvyu" path="res://scripts/clicker_scene.gd" id="1_mnexr"]
+[ext_resource type="Script" path="res://scripts/clicker_scene.gd" id="1_mnexr"]
 [ext_resource type="Texture2D" uid="uid://7i553gjuw2mx" path="res://assets_card_game_anime/background/setting.jpg" id="2_mnexr"]
 [ext_resource type="Texture2D" uid="uid://ddgxfgtjoxeaj" path="res://assets_card_game_anime/UI/panel.jpg" id="3_m5qay"]
-[ext_resource type="FontFile" uid="uid://cs4nv7nl8f00l" path="res://font/Kenney Mini.ttf" id="4_d5uvg"]
+[ext_resource type="FontFile" uid="uid://dr0twaglgbawy" path="res://font/NotoSans-Italic-VariableFont_wdth,wght.ttf" id="4_fdug7"]
 [ext_resource type="PackedScene" uid="uid://byr38x38cmchs" path="res://scenes/button/main_screen_button/button_shop.tscn" id="5_ms6ti"]
-[ext_resource type="PackedScene" uid="uid://bker0e4i2gcql" path="res://scenes/button/main_screen_button/button_business.tscn" id="6_qu035"]
 [ext_resource type="PackedScene" uid="uid://mipas70eukty" path="res://scenes/button/main_screen_button/mini_game.tscn" id="7_26wkj"]
 [ext_resource type="PackedScene" uid="uid://dmghmbof6v01i" path="res://scenes/button/main_screen_button/collection.tscn" id="8_m3mmr"]
 [ext_resource type="PackedScene" uid="uid://3ctwboto4rj2" path="res://scenes/button/button_home.tscn" id="9_r4yvy"]
@@ -25,17 +24,17 @@ scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_mnexr")
 
 [node name="Panel" type="Panel" parent="."]
-modulate = Color(0.65882355, 0.65882355, 0.654902, 1)
+modulate = Color(0.658824, 0.658824, 0.654902, 1)
 layout_mode = 0
 offset_right = 387.0
 offset_bottom = 116.0
 
 [node name="TextureRect2" type="TextureRect" parent="Panel"]
 layout_mode = 0
-offset_left = -1.9999995
+offset_left = -2.0
 offset_top = 6.0
-offset_right = 3897.9995
-offset_bottom = 1205.9999
+offset_right = 3898.0
+offset_bottom = 1206.0
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("3_m5qay")
 expand_mode = 1
@@ -49,37 +48,33 @@ theme_override_constants/separation = 10
 
 [node name="Energy" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
-tooltip_auto_translate_mode = 1
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_d5uvg")
+theme_override_fonts/font = ExtResource("4_fdug7")
 theme_override_font_sizes/font_size = 18
 
 [node name="Money" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_d5uvg")
+theme_override_fonts/font = ExtResource("4_fdug7")
 theme_override_font_sizes/font_size = 18
 
 [node name="Diamond" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_d5uvg")
+theme_override_fonts/font = ExtResource("4_fdug7")
 theme_override_font_sizes/font_size = 18
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 0
-offset_left = -38.0
-offset_top = 528.0
-offset_right = 431.0
-offset_bottom = 686.0
+offset_left = -33.0
+offset_top = 607.0
+offset_right = 436.0
+offset_bottom = 765.0
 theme_override_constants/separation = 70
 alignment = 1
 
 [node name="Button2" parent="HBoxContainer" instance=ExtResource("5_ms6ti")]
-layout_mode = 2
-
-[node name="Button4" parent="HBoxContainer" instance=ExtResource("6_qu035")]
 layout_mode = 2
 
 [node name="Button3" parent="HBoxContainer" instance=ExtResource("7_26wkj")]

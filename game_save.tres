@@ -4,21 +4,64 @@
 
 [resource]
 script = ExtResource("1_0sywv")
-total_click = 169
-total_earn_money = 602
-energy = 22
-money = 439
-boost_click = 5.0
+chance_dict = {
+"common": 0.7,
+"epic": 0.2,
+"legend": 0.1
+}
+cristal_by_box = 20
+total_click = 5
+total_earn_money = 20
+passive_income_recovery = 0
+energy = 188
+max_energy = 200
+energy_click = 1
+recovery_energy = 2
+clicks = 4
+money = 120
+crystals = 10
+keys_common = 0
+keys_rare = 0
+equip_card = "common_1"
+equip_background = "common_1"
+open_cards = {
+"common_1": true,
+"common_2": false,
+"common_3": false,
+"epic_1": false,
+"epic_2": false,
+"epic_3": false,
+"epic_4": false,
+"legend_1": false
+}
+open_backgrounds = {
+"common_1": true
+}
+boost_shop = 1.0
+boost_click = 1.0
+boost_energy_max = 1.0
+boost_recorvy_energy = 1.0
+boost_discount = 1.0
+mini_game = 1.0
+critical_chance = 1.0
+luck = 1.0
 dict = null
 system_upgrade_shop = {
-0: 2,
-1: 1,
+0: 0,
+1: 0,
 2: 0,
 3: 0,
 4: 0,
-5: 1,
+5: 0,
 6: 0,
 7: 0,
 8: 0,
 9: 0
+}
+open_game = {
+1: true,
+2: false,
+3: false,
+4: false,
+5: false
 }

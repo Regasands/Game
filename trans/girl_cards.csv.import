@@ -6,10 +6,10 @@ uid="uid://oisa5r61x1lq"
 
 [deps]
 
-files=["res://trans/girl_cards.en.translation", "res://trans/girl_cards.ru.translation", "res://trans/girl_cards.es .translation"]
+files=["res://trans/girl_cards.en.translation", "res://trans/girl_cards.ru.translation", "res://trans/girl_cards.kk.translation", "res://trans/girl_cards.de.translation"]
 
 source_file="res://trans/girl_cards.csv"
-dest_files=["res://trans/girl_cards.en.translation", "res://trans/girl_cards.ru.translation", "res://trans/girl_cards.es .translation"]
+dest_files=["res://trans/girl_cards.en.translation", "res://trans/girl_cards.ru.translation", "res://trans/girl_cards.kk.translation", "res://trans/girl_cards.de.translation"]
 
 [params]
 

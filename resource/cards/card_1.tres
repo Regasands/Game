@@ -1,13 +1,24 @@
 [gd_resource type="Resource" script_class="ResourceCard" load_steps=3 format=3 uid="uid://cafsxhcfdbujq"]
 
-[ext_resource type="Texture2D" uid="uid://bqmof3cjvklg3" path="res://assets_card_game_anime/cards/common_card_1.jpg" id="1_6igjc"]
-[ext_resource type="Script" uid="uid://dje3deo6scmgj" path="res://scripts/card/card_resource.gd" id="1_opqii"]
+[ext_resource type="Script" path="res://scripts/card/card_resource.gd" id="1_42600"]
+[ext_resource type="Texture2D" uid="uid://bqmof3cjvklg3" path="res://assets_card_game_anime/cards/common_card_1.jpg" id="1_g3hkq"]
 
 [resource]
-script = ExtResource("1_opqii")
+script = ExtResource("1_42600")
+card_id = ""
 name = "char_name_stella_nova"
-cost = 0
+type = "creature"
+rarity = "common"
+cost = 1
 description = "flavor_text_stella"
 description_boost = "boost_text_1"
-card_texture = ExtResource("1_6igjc")
+card_texture = ExtResource("1_g3hkq")
+boost_shop = 1.0
+boost_click = 1.0
+boost_energy_max = 1.0
+recovery_energy = 1.0
+boost_discount = 1.0
+mini_game = 1.0
+critical_chance = 1.0
+luck = 1.0
 metadata/_custom_type_script = "uid://dje3deo6scmgj"

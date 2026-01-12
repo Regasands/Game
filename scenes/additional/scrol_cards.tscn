@@ -1,15 +1,15 @@
 [gd_scene load_steps=7 format=3 uid="uid://djrwtis53w6rh"]
 
-[ext_resource type="Script" uid="uid://dnukjb1bwl7jm" path="res://scripts/additional/scrol_cards.gd" id="1_88x08"]
+[ext_resource type="Script" path="res://scripts/additional/scrol_cards.gd" id="1_88x08"]
 [ext_resource type="PackedScene" uid="uid://dhajq42i4unui" path="res://scenes/card.tscn" id="1_oxkep"]
-[ext_resource type="FontFile" uid="uid://cs4nv7nl8f00l" path="res://font/Kenney Mini.ttf" id="3_6wlvc"]
+[ext_resource type="FontFile" uid="uid://dr0twaglgbawy" path="res://font/NotoSans-Italic-VariableFont_wdth,wght.ttf" id="3_g0sue"]
 [ext_resource type="AudioStream" uid="uid://moejq2g6b2kb" path="res://music/game_sounds/where_money.mp3" id="4_gtpep"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gtpep"]
-bg_color = Color(0.20392157, 0.20392157, 0.20392157, 0.4509804)
+bg_color = Color(0.203922, 0.203922, 0.203922, 0.45098)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6wlvc"]
-bg_color = Color(0.7030746, 1.2732385, 0.31369436, 0.83137256)
+bg_color = Color(0.703075, 1.27324, 0.313694, 0.831373)
 border_color = Color(0, 0, 0, 1)
 
 [node name="ScrolCards" type="Control"]
@@ -18,7 +18,7 @@ anchor_right = 1.008
 anchor_bottom = 1.0
 offset_left = 3.0
 offset_top = -4.0
-offset_right = -6.0400085
+offset_right = -6.04001
 offset_bottom = -6.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -54,7 +54,7 @@ offset_left = 82.0
 offset_top = 520.0
 offset_right = 322.0
 offset_bottom = 570.0
-theme_override_fonts/font = ExtResource("3_6wlvc")
+theme_override_fonts/font = ExtResource("3_g0sue")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxFlat_6wlvc")
 
@@ -76,7 +76,7 @@ layout_mode = 2
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("3_6wlvc")
+theme_override_fonts/font = ExtResource("3_g0sue")
 theme_override_font_sizes/font_size = 24
 horizontal_alignment = 1
 
@@ -85,7 +85,7 @@ custom_minimum_size = Vector2(380, 50)
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("3_6wlvc")
+theme_override_fonts/font = ExtResource("3_g0sue")
 theme_override_font_sizes/font_size = 24
 autowrap_mode = 3
 
@@ -94,7 +94,7 @@ custom_minimum_size = Vector2(380, 50)
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 1
-theme_override_fonts/font = ExtResource("3_6wlvc")
+theme_override_fonts/font = ExtResource("3_g0sue")
 theme_override_font_sizes/font_size = 24
 autowrap_mode = 3
 

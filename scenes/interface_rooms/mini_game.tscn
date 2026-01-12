@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=3 uid="uid://defikf606p7dp"]
+
+[ext_resource type="Script" path="res://scripts/clicker_scene.gd" id="1_6jmb4"]
+[ext_resource type="Texture2D" uid="uid://gelbr8kok0re" path="res://assets_card_game_anime/background/mini_game.jpg" id="2_kdoa7"]
+[ext_resource type="Texture2D" uid="uid://ddgxfgtjoxeaj" path="res://assets_card_game_anime/UI/panel.jpg" id="3_gdogt"]
+[ext_resource type="FontFile" uid="uid://dr0twaglgbawy" path="res://font/NotoSans-Italic-VariableFont_wdth,wght.ttf" id="4_s7686"]
+[ext_resource type="PackedScene" uid="uid://3ctwboto4rj2" path="res://scenes/button/button_home.tscn" id="5_kdoa7"]
+
+[node name="ClickerScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6jmb4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 799.0
+offset_bottom = 1670.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_kdoa7")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.658824, 0.658824, 0.654902, 1)
+layout_mode = 0
+offset_right = 387.0
+offset_bottom = 116.0
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 6.0
+offset_right = 4018.0
+offset_bottom = 1206.0
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_gdogt")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_right = 401.0
+offset_bottom = 154.0
+theme_override_constants/separation = 10
+
+[node name="Energy" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_s7686")
+theme_override_font_sizes/font_size = 18
+
+[node name="Money" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_s7686")
+theme_override_font_sizes/font_size = 18
+
+[node name="Diamond" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_s7686")
+theme_override_font_sizes/font_size = 18
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -33.0
+offset_top = 603.0
+offset_right = 436.0
+offset_bottom = 761.0
+theme_override_constants/separation = 70
+alignment = 1
+
+[node name="Button" parent="HBoxContainer" instance=ExtResource("5_kdoa7")]
+layout_mode = 2

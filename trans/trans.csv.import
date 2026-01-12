@@ -6,10 +6,10 @@ uid="uid://re2ttpf70aql"
 
 [deps]
 
-files=["res://trans/trans.en.translation", "res://trans/trans.ru.translation", "res://trans/trans.es.translation"]
+files=["res://trans/trans.en.translation", "res://trans/trans.ru.translation", "res://trans/trans.kk.translation", "res://trans/trans.de.translation"]
 
 source_file="res://trans/trans.csv"
-dest_files=["res://trans/trans.en.translation", "res://trans/trans.ru.translation", "res://trans/trans.es.translation"]
+dest_files=["res://trans/trans.en.translation", "res://trans/trans.ru.translation", "res://trans/trans.kk.translation", "res://trans/trans.de.translation"]
 
 [params]
 

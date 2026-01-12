@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://e3d2wtktwb8p"]
 
 [ext_resource type="PackedScene" uid="uid://ckmy7ptyckmo5" path="res://scenes/interface_rooms/shop_scene.tscn" id="1_8j6uf"]
-[ext_resource type="Script" uid="uid://ym55np5j2xhw" path="res://scripts/room/shop_scene.gd" id="1_88ict"]
+[ext_resource type="Script" path="res://scripts/room/shop_scene.gd" id="1_88ict"]
 [ext_resource type="AudioStream" uid="uid://dvvfahi0duybm" path="res://music/background/shop.mp3" id="3_ykvs5"]
 
 [node name="ShopScene" type="Node2D"]

@@ -6,7 +6,8 @@ var all_buttons_change_scene = {
 	"shop": "res://scenes/rooms/shop_scene.tscn",
 	"home": "res://scenes/rooms/main_scene.tscn",
 	"collection": "res://scenes/rooms/collection_scene.tscn",
-	"setting": "res://scenes/rooms/setting_scene.tscn"
+	"setting": "res://scenes/rooms/setting_scene.tscn",
+	"mini_game": "res://scenes/game/mini_game.tscn",
 }
 func _register_button() -> void:
 	for button_id in all_buttons.keys():

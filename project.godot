@@ -11,26 +11,36 @@ config_version=5
 [application]
 
 config/name="clicker_first"
-run/main_scene="uid://6iat6sqc0f5n"
-config/features=PackedStringArray("4.5", "GL Compatibility")
+run/main_scene="res://scenes/rooms/main_scene.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GameState="*res://scripts/game/game_state.gd"
 SceneManager="*res://scripts/scene_manager.gd"
+YandexSDK="*res://addons/godot-yandex-games-sdk/yandex_sdk.gd"
 
 [display]
 
-window/size/viewport_width=380
-window/size/viewport_height=640
+window/size/viewport_width=400
+window/size/viewport_height=720
 window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot-yandex-games-sdk/plugin.cfg")
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [internationalization]
 
-locale/translations=PackedStringArray("res://trans/trans.en.translation", "res://trans/trans.es.translation", "res://trans/trans.ru.translation", "res://trans/girl_cards.en.translation", "res://trans/girl_cards.es .translation", "res://trans/girl_cards.ru.translation")
+locale/translations=PackedStringArray("res://trans/girl_cards.de.translation", "res://trans/girl_cards.en.translation", "res://trans/girl_cards.es .translation", "res://trans/girl_cards.kk.translation", "res://trans/girl_cards.ru.translation", "res://trans/trans.de.translation", "res://trans/trans.en.translation", "res://trans/trans.es.translation", "res://trans/trans.kk.translation", "res://trans/trans.ru.translation")
 
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

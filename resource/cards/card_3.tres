@@ -1,14 +1,24 @@
 [gd_resource type="Resource" script_class="ResourceCard" load_steps=3 format=3 uid="uid://bfiv8n2nfsqpb"]
 
-[ext_resource type="Texture2D" uid="uid://drmnpbplicsau" path="res://assets_card_game_anime/cards/common_card_3.jpg" id="1_i1euo"]
-[ext_resource type="Script" uid="uid://dje3deo6scmgj" path="res://scripts/card/card_resource.gd" id="1_s1ttu"]
+[ext_resource type="Texture2D" uid="uid://drmnpbplicsau" path="res://assets_card_game_anime/cards/common_card_3.jpg" id="1_hg6cn"]
+[ext_resource type="Script" path="res://scripts/card/card_resource.gd" id="2_20mbn"]
 
 [resource]
-script = ExtResource("1_s1ttu")
+script = ExtResource("2_20mbn")
+card_id = ""
 name = "3_name"
+type = "creature"
+rarity = "common"
 cost = 1000
 description = "flavor_text_3"
 description_boost = "boost_text_3"
-card_texture = ExtResource("1_i1euo")
+card_texture = ExtResource("1_hg6cn")
+boost_shop = 1.0
 boost_click = 2.0
+boost_energy_max = 1.0
+recovery_energy = 1.0
+boost_discount = 1.0
+mini_game = 1.0
+critical_chance = 1.0
+luck = 1.0
 metadata/_custom_type_script = "uid://dje3deo6scmgj"

@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://by3df4qkbpclw"]
+[gd_scene load_steps=5 format=3 uid="uid://by3df4qkbpclw"]
 
-[ext_resource type="Script" uid="uid://cjtu5n0lpvoko" path="res://scripts/additional/upgrade_cards.gd" id="1_1nknt"]
+[ext_resource type="Script" path="res://scripts/additional/upgrade_cards.gd" id="1_1nknt"]
 [ext_resource type="FontFile" uid="uid://cs4nv7nl8f00l" path="res://font/Kenney Mini.ttf" id="2_1nknt"]
+[ext_resource type="FontFile" uid="uid://dr0twaglgbawy" path="res://font/NotoSans-Italic-VariableFont_wdth,wght.ttf" id="2_lj8io"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1nknt"]
-bg_color = Color(0.5803922, 0.54509807, 0.9137255, 0.5411765)
+bg_color = Color(0.580392, 0.545098, 0.913725, 0.541176)
 
 [node name="Upgrade_Cards" type="Control"]
 layout_mode = 3
@@ -32,12 +33,12 @@ theme_override_constants/separation = 20
 
 [node name="Name" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_1nknt")
+theme_override_fonts/font = ExtResource("2_lj8io")
 vertical_alignment = 1
 
 [node name="Cost" type="Label" parent="Panel/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_1nknt")
+theme_override_fonts/font = ExtResource("2_lj8io")
 vertical_alignment = 1
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Panel"]
@@ -49,13 +50,13 @@ theme_override_constants/separation = 20
 
 [node name="Boost" type="Label" parent="Panel/VBoxContainer2"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_1nknt")
+theme_override_fonts/font = ExtResource("2_lj8io")
 horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="Level" type="Label" parent="Panel/VBoxContainer2"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_1nknt")
+theme_override_fonts/font = ExtResource("2_lj8io")
 horizontal_alignment = 2
 vertical_alignment = 1
 

@@ -19,10 +19,9 @@ func _ready() -> void:
 	for key in all_cards.keys():
 		list_cards.append(key)
 	current_card.global_position = global_position_
-	print(list_cards)
 	update_card(index_current)
 
-
+	
 func _is_available_check_by_index(index: int) -> bool:
 	return all_cards[list_cards[index]]
 

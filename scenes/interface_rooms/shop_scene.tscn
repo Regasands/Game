@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ckmy7ptyckmo5"]
+[gd_scene load_steps=6 format=3 uid="uid://ckmy7ptyckmo5"]
 
 [ext_resource type="PackedScene" uid="uid://c1hgx12psnoqt" path="res://scenes/interface_rooms/ui_scene_base.tscn" id="1_65s7d"]
 [ext_resource type="Texture2D" uid="uid://cxmfrn7nms3uk" path="res://assets_card_game_anime/background/shop.jpg" id="2_pkdvm"]
+[ext_resource type="FontFile" uid="uid://dr0twaglgbawy" path="res://font/NotoSans-Italic-VariableFont_wdth,wght.ttf" id="3_hu0vd"]
 [ext_resource type="PackedScene" uid="uid://dn5comdvgbw" path="res://scenes/button/shop/button_shop_boost.tscn" id="3_pqaue"]
 [ext_resource type="PackedScene" uid="uid://cimnp04cu2ipj" path="res://scenes/button/shop/button_shop_keys.tscn" id="3_ux078"]
 
@@ -9,6 +10,21 @@
 
 [node name="TextureRect" parent="." index="0"]
 texture = ExtResource("2_pkdvm")
+
+[node name="Energy" parent="Panel/VBoxContainer" index="0"]
+theme_override_fonts/font = ExtResource("3_hu0vd")
+
+[node name="Money" parent="Panel/VBoxContainer" index="1"]
+theme_override_fonts/font = ExtResource("3_hu0vd")
+
+[node name="Diamond" parent="Panel/VBoxContainer" index="2"]
+theme_override_fonts/font = ExtResource("3_hu0vd")
+
+[node name="HBoxContainer" parent="." index="2"]
+offset_left = -43.0
+offset_top = 609.0
+offset_right = 426.0
+offset_bottom = 767.0
 
 [node name="button_shop_keys" parent="HBoxContainer" index="0" instance=ExtResource("3_ux078")]
 layout_mode = 2

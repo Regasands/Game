@@ -1,37 +1,39 @@
-keys,en,ru,es
-ui_money,Money,Деньги,Dinero
-ui_energy,Energy,Энергия,Energía
-ui_crystals,Crystals,Кристаллы,Cristales
-ui_button_use,Use,Использовать,Usar
-ui_button_available,Available,Доступно,Disponible
-ui_button_apply,Apply,Применить,Aplicar
-ui_button_buy_for,Buy for:,Купить за:,Comprar por:
-ui_button_buy_key_for,Buy for 15 Crystals,Купить за 15 кристаллов ,Comprar por 15 сristales
-boost_text_1,No,Нету,NO
-boost_text_2,Click X1.2,клик X1.2,Clic X1.2
-boost_text_3,Click X2,клик X2,Clic X2
-
-shop_add_clicks,Add click,Добавочные клики,Clics adicionales
-shop_boost_click,Amplifier,Усилитель клика,Amplificador
-shop_boost_click_d,Deluxe,Элитный,De lujo
-shop_boost_shop,Multiplier,Множитель,Multiplicador
-shop_boost_shop_d,Deluxe,Элитный,De lujo
-shop_boost_energy_max,Capacity,Емкость,Capacidad
-shop_boost_energy_max_d,Deluxe,Элитный,De lujo
-shop_boost_energy_recovery,Recharge,Зарядка,Recarga
-shop_boost_energy_recovery_d,Deluxe,Элитный,De lujo
-shop_boost_discount,Discount,Скидка,Descuento
-shop_boost_discount_d,Deluxe,Элитный,De lujo
-shop_add_clicks_d,Additional clicks per second,Дополнительные клики в секунду,Clics adicionales por segundo
-shop_energy_recovery_d,Energy recovery per second,Восстановление энергии в секунду,Recuperación de energía por segundo
-shop_energy_recovery,Energy recovery,Восстановление энергии,Recuperación de energía
-shop_energy_max,Maximum energy capacity,Максимальный запас энергии,Capacidad máxima de energía
-shop_energy_max_d,Maximum energy ,Максимальный запас,Capacidad máxima
-
-stat_total_clicks,Total Clicks,Всего кликов,Clics totales
-stat_money_earned,Money Earned,Всего заработано,Dinero ganado
-stat_passive_income,Passive Income per Second,Пассивный доход в секунду,Ingresos pasivos por segundo
-stat_click_boost,Click Multiplier,Множитель клика,Multiplicador de clic
-stat_energy_recovery,Energy Recovery,Восстановление энергии,Recuperación de energía
-stat_luck_boost,Luck Multiplier,Множитель удачи,Multiplicador de suerte
-stat_discount_boost,Discount Multiplier,Множитель скидки,Multiplicador de descuento
+keys,en,ru,kk,de
+ui_money,Money,Деньги,Ақша,Geld
+ui_energy,Energy,Энергия,Энергия,Energie
+ui_crystals,Crystals,Кристаллы,Кристалдар,Kristalle
+ui_button_use,Use,Использовать,Қолдану,Verwenden
+ui_button_available,Available,Доступно,Қол жетімді,Verfügbar
+ui_button_apply,Apply,Применить,Қолдану,Anwenden
+ui_button_buy_for,Buy for:,Купить за:,Сатып алу:,Kaufen für:
+ui_button_buy_key_for,Buy for 15 Crystals,Купить за 15 кристаллов,15 кристалға сатып алу,Für 15 Kristalle kaufen
+boost_text_1,No,Нету,Жоқ,NEIN
+boost_text_2,Click X1.2,клик X1.2,Клик X1.2,Klick X1.2
+boost_text_3,Click X2,клик X2,Клик X2,Klick X2
+shop_add_clicks,Add click,Добавочные клики,Қосымша кликтер,Zusätzliche Klicks
+shop_boost_click,Amplifier,Усилитель клика,Клик күшейткіші,Klick-Verstärker
+shop_boost_click_d,Deluxe,Элитный,Элитті,Deluxe
+shop_boost_shop,Multiplier,Множитель,Көбейткіш,Multiplikator
+shop_boost_shop_d,Deluxe,Элитный,Элитті,Deluxe
+shop_boost_energy_max,Capacity,Емкость,Сыйымдылық,Kapazität
+shop_boost_energy_max_d,Deluxe,Элитный,Элитті,Deluxe
+shop_boost_energy_recovery,Recharge,Зарядка,Зарядтау,Aufladung
+shop_boost_energy_recovery_d,Deluxe,Элитный,Элитті,Deluxe
+shop_boost_discount,Discount,Скидка,Жеңілдік,Rabatt
+shop_boost_discount_d,Deluxe,Элитный,Элитті,Deluxe
+shop_add_clicks_d,Additional clicks per second,Дополнительные клики в секунду,Секундына қосымша кликтер,Zusätzliche Klicks pro Sekunde
+shop_energy_recovery_d,Energy recovery per second,Восстановление энергии в секунду,Секундына энергияны қалпына келтіру,Energiewiederherstellung pro Sekunde
+shop_energy_recovery,Energy recovery,Восстановление энергии,Энергияны қалпына келтіру,Energiewiederherstellung
+shop_energy_max,Maximum energy capacity,Максимальный запас энергии,Энергияның максималды қоры,Maximale Energiekapazität
+shop_energy_max_d,Maximum energy ,Максимальный запас,Максималды қор,Maximale Energie
+stat_total_clicks,Total Clicks,Всего кликов,Барлық кликтер,Gesamtklicks
+stat_money_earned,Money Earned,Всего заработано,Табылған барлық ақша,Verdientes Geld
+stat_passive_income,Passive Income per Second,Пассивный доход в секунду,Секундына пассивті табыс,Passives Einkommen pro Sekunde
+stat_click_boost,Click Multiplier,Множитель клика,Клик көбейткіші,Klick-Multiplikator
+stat_energy_recovery,Energy Recovery,Восстановление энергии,Энергияны қалпына келтіру,Energiewiederherstellung
+stat_luck_boost,Luck Multiplier,Множитель удачи,Сәт көбейткіші,Glücks-Multiplikator
+stat_discount_boost,Discount Multiplier,Множитель скидки,Жеңілдік көбейткіші,Rabatt-Multiplikator
+ui_level_game_easy,"10 min, reward: 1 diamond","10 мин, награда 1 алмаз","10 мин, сыйлық 1 алмаз","10 Min, Belohnung 1 Diamant"
+ui_level_game_normal,"40 min, reward: 5 diamonds!","40 мин, награда 5 алмазов!","40 мин, сыйлық 5 алмаз!","40 Min, Belohnung 5 Diamanten!"
+ui_label_win_game,Victory!,Победа!,Жеңіс!,Sieg!
+ui_label_lose_game,Defeat,Проигрышь,Жеңіліс,Niederlage

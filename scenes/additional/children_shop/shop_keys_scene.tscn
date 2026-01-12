@@ -1,11 +1,11 @@
 [gd_scene load_steps=12 format=3 uid="uid://t5mt8fyeqpxw"]
 
-[ext_resource type="Script" uid="uid://bjp6obolm3y1" path="res://scenes/additional/children_shop/shop_keys_scene.gd" id="1_afh2o"]
+[ext_resource type="Script" path="res://scenes/additional/children_shop/shop_keys_scene.gd" id="1_afh2o"]
 [ext_resource type="Texture2D" uid="uid://bpkjct4gqt075" path="res://assets_card_game_anime/items/animation_book_2.png" id="1_s7squ"]
-[ext_resource type="FontFile" uid="uid://cs4nv7nl8f00l" path="res://font/Kenney Mini.ttf" id="2_u0esi"]
+[ext_resource type="FontFile" uid="uid://dr0twaglgbawy" path="res://font/NotoSans-Italic-VariableFont_wdth,wght.ttf" id="2_r7ptt"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vq82p"]
-bg_color = Color(0.4117647, 0.6431373, 0.7019608, 0.6627451)
+bg_color = Color(0.411765, 0.643137, 0.701961, 0.662745)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_afh2o"]
 atlas = ExtResource("1_s7squ")
@@ -73,14 +73,14 @@ script = ExtResource("1_afh2o")
 [node name="BuyCard" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.1684492
-anchor_top = 0.7078825
-anchor_right = 0.85294116
-anchor_bottom = 0.75734156
+anchor_left = 0.168449
+anchor_top = 0.707883
+anchor_right = 0.852941
+anchor_bottom = 0.757342
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(0, 16)
-theme_override_fonts/font = ExtResource("2_u0esi")
+theme_override_fonts/font = ExtResource("2_r7ptt")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_vq82p")
 metadata/_edit_use_anchors_ = true
@@ -88,10 +88,10 @@ metadata/_edit_use_anchors_ = true
 [node name="AnimatedCard" type="AnimatedSprite2D" parent="."]
 position = Vector2(185, 353)
 sprite_frames = SubResource("SpriteFrames_emu3e")
-frame_progress = 0.5627737
+frame_progress = 0.562774
 
 [node name="SpawnPoint" type="Marker2D" parent="AnimatedCard"]
-position = Vector2(-1, -160)
+position = Vector2(-121, -160)
 
 [connection signal="pressed" from="BuyCard" to="." method="_on_buy_card_pressed"]
 [connection signal="animation_finished" from="AnimatedCard" to="." method="_on_animated_card_animation_finished"]

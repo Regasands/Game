@@ -1,17 +1,24 @@
 [gd_resource type="Resource" script_class="ResourceCard" load_steps=3 format=3 uid="uid://dhxxnticfyjr0"]
 
-[ext_resource type="Script" uid="uid://dje3deo6scmgj" path="res://scripts/card/card_resource.gd" id="1_kqro2"]
-[ext_resource type="Texture2D" uid="uid://bpdwxyrtgu7uu" path="res://assets_card_game_anime/cards/epic_card_1.jpg" id="1_tj47s"]
+[ext_resource type="Texture2D" uid="uid://bpdwxyrtgu7uu" path="res://assets_card_game_anime/cards/epic_card_1.jpg" id="1_htflp"]
+[ext_resource type="Script" path="res://scripts/card/card_resource.gd" id="2_ru8la"]
 
 [resource]
-script = ExtResource("1_kqro2")
+script = ExtResource("2_ru8la")
+card_id = ""
 name = "epic_card_1_name"
+type = "creature"
 rarity = "epic"
 cost = 2500
 description = "epic_card_1_flavor"
 description_boost = "epic_card_1_boost"
-card_texture = ExtResource("1_tj47s")
+card_texture = ExtResource("1_htflp")
+boost_shop = 1.0
 boost_click = 2.0
-recovery_energy = 2.0
+boost_energy_max = 1.0
+recovery_energy = 1.0
+boost_discount = 1.0
+mini_game = 1.0
+critical_chance = 1.0
 luck = 1.5
 metadata/_custom_type_script = "uid://dje3deo6scmgj"

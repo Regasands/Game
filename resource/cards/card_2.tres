@@ -1,15 +1,24 @@
 [gd_resource type="Resource" script_class="ResourceCard" load_steps=3 format=3 uid="uid://dqwcu4h0yq1ww"]
 
-[ext_resource type="Script" uid="uid://dje3deo6scmgj" path="res://scripts/card/card_resource.gd" id="1_e47m0"]
-[ext_resource type="Texture2D" uid="uid://s6r1tn5o4msh" path="res://assets_card_game_anime/cards/common_card_2.jpg" id="1_s7e76"]
+[ext_resource type="Texture2D" uid="uid://s6r1tn5o4msh" path="res://assets_card_game_anime/cards/common_card_2.jpg" id="1_b2ub4"]
+[ext_resource type="Script" path="res://scripts/card/card_resource.gd" id="2_bcf6k"]
 
 [resource]
-script = ExtResource("1_e47m0")
+script = ExtResource("2_bcf6k")
+card_id = ""
 name = "second_name_viktoria"
+type = "creature"
+rarity = "common"
 cost = 500
 description = "flavor_text_viktoria"
 description_boost = "boost_text_2"
-card_texture = ExtResource("1_s7e76")
+card_texture = ExtResource("1_b2ub4")
+boost_shop = 1.0
 boost_click = 1.2
 boost_energy_max = 1.2
+recovery_energy = 1.0
+boost_discount = 1.0
+mini_game = 1.0
+critical_chance = 1.0
+luck = 1.0
 metadata/_custom_type_script = "uid://dje3deo6scmgj"

@@ -23,12 +23,12 @@ func _ready() -> void:
 
 # Обработчики сигналов
 func _on_money_changed(new_value: int) -> void:
-	money_label.text = "💰 %s: %s" % [tr("ui_money"), format_number(new_value)]
+	money_label.text = " %s: %s" % [tr("ui_money"), format_number(new_value)]
 	animate_label(money_label)
 
 func _on_energy_changed(new_value: int, max_value: int) -> void:
 	
-	energy_label.text =  "⚡ %s: %s/%s" % [tr("ui_energy"), 
+	energy_label.text =  " %s: %s/%s" % [tr("ui_energy"), 
 		format_number(new_value), format_number(max_value)]
 	if new_value < max_value * 0.2:
 		energy_label.modulate = Color.RED
@@ -37,7 +37,7 @@ func _on_energy_changed(new_value: int, max_value: int) -> void:
 		energy_label.modulate = Color.WHITE
 
 func _on_crystals_changed(new_value: int) -> void:
-	diamond_label.text = "💎 %s: %s" % [tr("ui_crystals"), format_number(new_value)]
+	diamond_label.text = " %s: %s" % [tr("ui_crystals"), format_number(new_value)]
 
 
 

@@ -14,6 +14,7 @@ var global_position_: Vector2 = Vector2(64, 180)
 func _ready() -> void:
 	texture_.pivot_offset = texture_.size / 2
 	global_position = global_position_
+	print(GameState.resource_card)
 	_add_texture(GameState.resource_card)
 
 
@@ -23,6 +24,7 @@ func setup(card_data):
 
 
 func _add_texture(resource_, is_path=false) -> void:
+	
 	if is_path:
 		texture_.texture = load(resource_)
 	else:

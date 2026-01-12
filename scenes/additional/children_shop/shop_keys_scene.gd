@@ -1,3 +1,4 @@
+
 extends Control
 
 
@@ -17,7 +18,6 @@ func _on_buy_card_pressed() -> void:
 		return 
 	var list_cards = GameState.get_all_close_card_anime()
 	if list_cards.is_empty():
-		print("Все карты открыты!")
 		return
 
 	var cards_by_rarity = {}

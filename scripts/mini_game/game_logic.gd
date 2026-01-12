@@ -1,137 +1,109 @@
 extends Node
 
-var grid = []
-var grid_size = 4
-var score = 0
+signal game_won()
+signal game_lost()
 
-signal diamond_earned(amount)
+var grid = []
+var mine_grid = [] 
+var revealed_grid = []
+var flagged_grid = []
+var grid_size = 14
+var mine_count = 10
+var rewards = 0
 
 func _ready():
-	initialize_grid()
-	spawn_random_tile()
-	spawn_random_tile()
+	initialize_game()
 
 
-func initialize_grid():
-	"""
-		   Создаем пустое поле
-	"""
-	
+func initialize_game():
 	grid = []
+	mine_grid = []
+	revealed_grid = []
+	flagged_grid = []
+	
 	for x in range(grid_size):
 		grid.append([])
+		mine_grid.append([])
+		revealed_grid.append([])
+		flagged_grid.append([])
 		for y in range(grid_size):
 			grid[x].append(0)
+			mine_grid[x].append(false)
+			revealed_grid[x].append(false)
+			flagged_grid[x].append(false)
+	
+	place_mines()
+	calculate_numbers()
 
 
-func spawn_random_tile():
-	var empty_cells = []
+func place_mines():
+	var mines_placed = 0
+	while mines_placed < mine_count:
+		var x = randi() % grid_size
+		var y = randi() % grid_size
+		
+		if not mine_grid[x][y]:
+			mine_grid[x][y] = true
+			mines_placed += 1
+
+
+func calculate_numbers():
 	for x in range(grid_size):
 		for y in range(grid_size):
-			if grid[x][y] == 0:
-				empty_cells.append(Vector2i(x, y))
+			if mine_grid[x][y]:
+				grid[x][y] = -1  # -1 = мина
+			else:
+				grid[x][y] = count_adjacent_mines(x, y)
+
+
+func count_adjacent_mines(cell_x, cell_y) -> int:
+	var count = 0
+	for dx in [-1, 0, 1]:
+		for dy in [-1, 0, 1]:
+			if dx == 0 and dy == 0:
+				continue
 				
-	if empty_cells.size() > 0:
-		var cell = empty_cells[randi() % empty_cells.size()]
-		grid[cell.x][cell.y] = 2 if (randi() % 10) < 9 else 4  
-		return true
-	return false
+			var nx = cell_x + dx
+			var ny = cell_y + dy
+			
+			if nx >= 0 and nx < grid_size and ny >= 0 and ny < grid_size:
+				if mine_grid[nx][ny]:
+					count += 1
+	return count
 
-
-func move(direction: Vector2i):
-	var moved = false
-	var prev_score = score
-	
-	match direction:
-		Vector2i.LEFT: moved = move_horizontal(true)
-		Vector2i.RIGHT: moved = move_horizontal(false)
-		Vector2i.UP: moved = move_vertical(true)
-		Vector2i.DOWN: moved = move_vertical(false)
-	
-	if moved:
-		spawn_random_tile()
+func reveal_cell(x, y):
+	if revealed_grid[x][y] or flagged_grid[x][y]:
+		return
 		
-		var diamonds_before = floor(prev_score / 1024)
-		var diamonds_now = floor(score / 1024)
-		if diamonds_now > diamonds_before:
-			emit_signal("diamond_earned", diamonds_now - diamonds_before)
-		check_game_over()
-
-
-func move_horizontal(left: bool) -> bool:
-	var moved = false
-	for y in range(grid_size):
-		var row = []
-		for x in range(grid_size):
-			row.append(grid[x][y])
-		
-		var new_row = process_line(row, left)
-		
-		for x in range(grid_size):
-			if grid[x][y] != new_row[x]:
-				moved = true
-			grid[x][y] = new_row[x]
-	return moved
-
-
-func move_vertical(up: bool) -> bool:
-	var moved = false
-	for x in range(grid_size):
-		var column = []
-		for y in range(grid_size):
-			column.append(grid[x][y])
-		
-		var new_column = process_line(column, up)
-		
-		for y in range(grid_size):
-			if grid[x][y] != new_column[y]:
-				moved = true
-			grid[x][y] = new_column[y]
-	return moved
-
-func process_line(line: Array, reverse_for_merge: bool) -> Array:
-	var non_zero = []
-	for value in line:
-		if value != 0:
-			non_zero.append(value)
+	revealed_grid[x][y] = true
 	
-	if reverse_for_merge:
-		non_zero.reverse()
+	if mine_grid[x][y]:
+		emit_signal("game_lost")
+		return
 	
-	var merged = []
-	var i = 0
-	while i < non_zero.size():
-		if i + 1 < non_zero.size() and non_zero[i] == non_zero[i + 1]:
-			var new_value = non_zero[i] * 2
-			merged.append(new_value)
-			score += new_value 
-			i += 2
-		else:
-			merged.append(non_zero[i])
-			i += 1
+	if grid[x][y] == 0:
+		for dx in [-1, 0, 1]:
+			for dy in [-1, 0, 1]:
+				var nx = x + dx
+				var ny = y + dy
+				
+				if nx >= 0 and nx < grid_size and ny >= 0 and ny < grid_size:
+					if not revealed_grid[nx][ny] and not flagged_grid[nx][ny]:
+						reveal_cell(nx, ny)
 	
-	while merged.size() < grid_size:
-		merged.append(0)
-	
-	if reverse_for_merge:
-		merged.reverse()
-	
-	return merged
+	check_win_condition()
+
+func toggle_flag(x, y):
+	if not revealed_grid[x][y]:
+		flagged_grid[x][y] = !flagged_grid[x][y]
 
 
-func check_game_over():
-	for x in range(grid_size):
-		for y in range(grid_size):
-			if grid[x][y] == 0:
-				return false
+func check_win_condition():
 	
 	for x in range(grid_size):
 		for y in range(grid_size):
-			var current = grid[x][y]
-			if x + 1 < grid_size and grid[x + 1][y] == current:
-				return false
-			if y + 1 < grid_size and grid[x][y + 1] == current:
+			if not mine_grid[x][y] and not revealed_grid[x][y]:
 				return false
 	
-	print("Game Over! Final Score: ", score)
+	emit_signal("game_won")
 	return true

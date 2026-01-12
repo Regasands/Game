@@ -30,4 +30,4 @@ extends Resource
 
 # Функция для отладки
 func _to_string() -> String:
-	return "[Card: %s | HP: %d | DMG: %d]" % [name]
+	return "kl"

@@ -4,20 +4,24 @@ extends Node2D
 	
 @onready var ru_button: Button = $VBoxContainer/ru
 @onready var en_button: Button = $VBoxContainer/en
-@onready var es_button: Button = $VBoxContainer/es
+@onready var kk_button: Button = $VBoxContainer/kk
+@onready var de_button: Button = $VBoxContainer/de
 
 var list_button = null
-var lang_button = {"ru_RU": 0, "en_EN": 1, "es_ES": 2, "en": 1, "ru": 0, "es": 2}
+var lang_button = {"ru_RU": 0, "en_EN": 1, "kk_KK": 2,"de_DE": 3, "de": 3,  "en": 1, "ru": 0, "kk": 2}
 var color = Color("#6bc46b")
 var color_basic = Color("#8b8b8b")
 
 
 func _ready() -> void:
-	list_button = [ru_button, en_button, es_button]
+	list_button = [ru_button, en_button, kk_button, de_button]
 	await get_tree().process_frame
 	SceneManager._register_button()
-	var current_lang = TranslationServer.get_locale()
-	update_(lang_button[current_lang])
+	var current_lang = YandexSDK.lang
+	if current_lang:
+		update_(lang_button.get(current_lang, "ru"))
+	else:
+		update_(lang_button["ru"])
 	create_boost_statistc()
 	
 	
@@ -29,12 +33,17 @@ func _on_en_pressed() -> void:
 	TranslationServer.set_locale("en")
 	update_(1)
 
-func _on_es_pressed() -> void:
-	TranslationServer.set_locale("es")
+func _on_kk_pressed() -> void:
+	TranslationServer.set_locale("kk")
 	update_(2)
 
+
+func _on_de_pressed() -> void:
+	TranslationServer.set_locale("de")
+	update_(3)
+	
 func _change_button_color(index):
-	for i in range(3):
+	for i in range(4):
 		var style_box = list_button[i].get_theme_stylebox("normal") as StyleBoxFlat
 		if i == index:
 			style_box.bg_color = color

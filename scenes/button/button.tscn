@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ws0ftmhb4bl1"]
 
-[ext_resource type="Script" uid="uid://crgry5he5fypi" path="res://scripts/button/button.gd" id="1_s3p44"]
+[ext_resource type="Script" path="res://scripts/button/button.gd" id="1_s3p44"]
 [ext_resource type="AudioStream" uid="uid://8atbbo4mjnfn" path="res://music/game/Click_mouse_snd.wav" id="2_u7yrx"]
 
 [node name="Button" type="Control"]

@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://yoakox5032k2"]
+
+[ext_resource type="Script" path="res://scripts/mini_game/mini_game.gd" id="1_71tre"]
+[ext_resource type="PackedScene" uid="uid://defikf606p7dp" path="res://scenes/interface_rooms/mini_game.tscn" id="2_bu60c"]
+[ext_resource type="AudioStream" uid="uid://ux4ga5hb8tgt" path="res://music/background/Diamond Chain Combo.mp3" id="3_bu60c"]
+[ext_resource type="FontFile" uid="uid://dr0twaglgbawy" path="res://font/NotoSans-Italic-VariableFont_wdth,wght.ttf" id="4_ck0wl"]
+
+[node name="mini_game" type="Node2D"]
+script = ExtResource("1_71tre")
+
+[node name="ClickerScene" parent="." instance=ExtResource("2_bu60c")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_bu60c")
+volume_db = -10.0
+autoplay = true
+
+[node name="button_to_normal_level" type="Button" parent="."]
+offset_left = 72.0
+offset_top = 391.0
+offset_right = 328.0
+offset_bottom = 455.0
+theme_override_fonts/font = ExtResource("4_ck0wl")
+theme_override_font_sizes/font_size = 20
+
+[node name="button_to_easy_level" type="Button" parent="."]
+offset_left = 72.0
+offset_top = 317.0
+offset_right = 328.0
+offset_bottom = 381.0
+theme_override_fonts/font = ExtResource("4_ck0wl")
+theme_override_font_sizes/font_size = 20
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="button_to_normal_level" to="." method="_on_button_to_normal_level_pressed"]
+[connection signal="pressed" from="button_to_easy_level" to="." method="_on_button_to_easy_level_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
